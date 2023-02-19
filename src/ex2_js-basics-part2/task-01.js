@@ -5,6 +5,9 @@ const showTypeOf = (value) => {
   if (typeof value === 'string') {
     return 'string';
   }
+  if (isNaN(value) === true) {
+    return undefined;
+  }
   return undefined;
 };
 
